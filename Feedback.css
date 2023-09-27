@@ -1,0 +1,206 @@
+.feedbackForm {
+  width: 100%;
+  height: 100vh;
+}
+
+.formContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  background-color: #fff;
+}
+
+.formContainer form {
+  display: block;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  background-color: #a6bad79e;
+  backdrop-filter: blur(45px);
+  border-radius: 30px;
+  padding: 30px;
+  color: #fff;
+}
+
+.formContainer  h2 {
+  color: #23395b9e;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.formContainer h3 {
+  color: #23395b9e;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.formDiv {
+  margin: 5px;
+}
+
+.fas {
+  font-size: 30px;
+  margin: 6px;
+}
+
+.userRating label i {
+  cursor: pointer;
+}
+
+input[type="text"],
+textarea {
+  border-radius: 15px;
+  margin-top: 7px;
+  padding: 13px;
+  border: none;
+  width: 50%;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  opacity: 0.6;
+}
+
+input[type="text"],
+textarea:focus {
+  outline: 0;
+}
+
+
+.errorMessage {
+  width: 100%;
+  position: relative;
+  padding-top: 0.6%;
+  padding-left: 28%;
+  font-size: 13px;
+  color: red;
+  text-align: left;
+}
+
+form p,
+label {
+  color: #23395bf4;
+}
+
+.userRating label input {
+  display: none;
+}
+
+.userRating input:checked ~ .fa-angry {
+  transform: scale(1.3);
+  color: crimson;
+}
+
+.userRating input:checked ~ .fa-frown {
+  transform: scale(1.3);
+  color: orange;
+}
+
+.userRating input:checked ~ .fa-meh {
+  transform: scale(1.3);
+  color: yellow;
+}
+
+.userRating input:checked ~ .fa-grin-beam {
+  transform: scale(1.3);
+  color: rgb(100, 214, 100);
+}
+
+.userRating input:checked ~ .fa-grin-hearts {
+  transform: scale(1.3);
+  color: green;
+}
+
+.userRating label i {
+  color: #fff;
+}
+
+.userRating label i:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.fa-angry:hover {
+  color: crimson;
+}
+
+.fa-frown:hover {
+  color: orange;
+}
+
+.fa-meh:hover {
+  color: yellow;
+}
+
+.fa-grin-beam:hover {
+  color: lightgreen;
+}
+
+.fa-grin-hearts:hover {
+  color: green;
+}
+
+.userSubmit button {
+  background: #23395b9e;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 30px;
+  transition: 0.7s;
+  box-shadow: 1px 0 25px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userSubmit button:hover {
+  transition: 0.5s;
+  background-color: #fff;
+  color: #23395b9e;
+}
+
+/*********POP UP MESSAGE**********/
+
+.popUp {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  height: 26%;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background-color: #23395b;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.popUp * {
+  margin: 5px;
+}
+
+.popUp a {
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #23395b;
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+.popUp a:hover {
+  transform: scale(1.2);
+}
+
+.popUp.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}

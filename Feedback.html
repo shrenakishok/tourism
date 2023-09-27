@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="shortcut icon" href="./Images&Assets/Logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="ExternalStyleSheet.css">
+    <link rel="stylesheet" href="Feedback.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="Feedback.js" defer></script>
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <img class="WebLogo" src="Images&Assets/LOGO.png" alt="Company Logo" height="50">
+
+      <nav class="navbar">
+        <a href="./Home.html">HOME</a>
+        <a class="Active" href="#">FEEDBACK</a>
+        <a href="store.html">SHOP</a>
+        <a href="Quiz.html">QUIZ</a>
+        <a href="AboutUs.html">ABOUT US</a>
+      </nav>
+
+    </header>
+
+    <section class="feedbackForm">
+
+      <div class="formContainer">
+
+        <form id="form">
+          
+          <h2>GIVE YOUR FEEDBACK</h2>
+          <h3>Your feedback will help us to improve</h3>
+
+          <div class="userName formDiv">
+            <label for="fullname">Full Name</label>
+            <br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            <div class="errorMessage"></div>
+          </div>
+
+          <div class="userEmail formDiv">
+            <label for="email">Email address </label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="example@gmail.com">
+            <div class="errorMessage"></div>
+          </div>
+
+          <div class="userRating formDiv">
+            <p>How would you rate your experience?</p>
+            <label for="very_bad">
+              <input type="radio" id="very_bad" name="satisfiedLevel" value="Very bad">
+              <i class="fas fa-angry"></i>
+            </label>
+
+            <label for="bad">
+              <input type="radio" id="bad" name="satisfiedLevel" value="Bad">
+                <i class="fas fa-frown"></i>
+            </label>
+
+            <label for="average">
+              <input type="radio" id="average" name="satisfiedLevel" value="Average">
+              <i class="fas fa-meh"></i>
+            </label>
+
+            <label for="good">
+              <input type="radio" id="good" name="satisfiedLevel" value="Good">
+              <i class="fas fa-grin-beam"></i>
+            </label>
+
+            <label for="very_good">
+              <input type="radio" id="very_good" name="satisfiedLevel" value="Very Good">
+              <i class="fas fa-grin-hearts"></i>
+            </label>
+          </div>
+          
+          <div class="userFeedback formDiv">
+            <label for="comments">
+              Do you have any other suggestions to improve our service<br>
+            </label>
+            <textarea name="comments" rows="2" id="comments" placeholder="Any other feedback?"></textarea>
+          </div>
+
+          <div class="userSubmit">
+            <button type="submit">SEND FEEDBACK</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <div class="popUp">
+      <h1>Thank You!</h1>
+      <p>Your feedback has been submitted</p>
+      <a href="#" class="closeButton" onclick="popUpClose()">Close</a>
+    </div>
+
+    <footer class="footer">
+
+      <div class="footerContent">
+
+        <div class="rowFooter">
+
+          <div class="colFooter icons">
+            <img src="./Images&Assets/LOGO.png" width="150" alt="Ceylon Trotters">
+            <ul class="footerIcons">
+              <li>
+                <a href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="colFooter notIcons">
+            <h4>Developers</h4>
+            <ul class="footerNavigation">
+              <li><a href="./PageEditor.html">Sathurshanan</a></li>
+              <li><a href="Student1_Editor.html">Shrena</a></li>
+              <li><a href="page_editor.html">Dhilushan</a></li>
+            </ul>
+          </div>
+
+          <div class="colFooter notIcons">
+            <h4>Menu</h4>
+            <ul class="footerNavigation">
+              <li><a href="./Home.html">Home</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="store.html">Shop</a></li>
+              <li><a href="Quiz.html">Quiz</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+          </div>
+
+          <div class="colFooter notIcons">
+            <h4>Find More</h4>
+            <ul class="footerNavigation">
+              <li><a href="./AdditionalContent(Events).html">Events in Sri Lanka</a></li>
+              <li><a href="cara.html">Places Information</a></li>
+              <li><a href="additional.html">Our Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="colFooter notIcons">
+            <h4>Page Editor</h4>
+            <ul class="footerNavigation">
+              <li><a href="./PageEditor.html">Student 2</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="copyright">
+          Copyright © 2023 Ceylon Trotters | All Rights Reserved.
+        </p>
+
+      </div>
+
+    </footer>
+
+  </body>
+</html>

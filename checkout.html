@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="shortcut icon" href="Assets/Icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Check Out</h1>
+        <div class="return" onclick="redirect()">&#60; Back to Shopping</div>
+        <div class="detailsContainer"> 
+         <form id="form1" onsubmit="return showPopup()">
+            <div class="userDetails">
+                <h2 class="bill">Billing Information</h2>
+                <div class="userForm">
+                
+                    <div class="userGroup">
+                        <label for="fullName">Full Name: </label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                
+                    <div class="userGroup">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="userGroup">
+                        <label for="phone">Phone: </label>
+                        <input type="tel" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </div>
+                
+                    <div class="userGroup">
+                        <label for="address">Address: </label>
+                        <input type="text" id="address" required>
+                    </div>              
+                </div>
+
+            </div>
+            <div class="bankDetails">
+                <h2 class="bill">Payment Details</h2>
+                <div class="method">
+                    <div class="bankGroup">
+                        <input type="radio" id="creditCard" name="paymentMethod" value="creditCard" checked onclick="togglePaymentFields()">
+                        <label for="creditCard">Credit Card</label>
+                    </div>
+                    <div class="bankGroup">
+                        <input type="radio" id="paypal" name="paymentMethod" value="paypal" onclick="togglePaymentFields()">
+                        <label for="paypal">Paypal</label>
+                    </div>
+                </div>
+                <div class="bankGroup" id="creditCardFields">
+                    <label for="cardNumber">Cardholder Name: </label>
+                    <input type="text" id="userName" name="userName" required>
+                    <br>
+                    <label for="cardNumber">Card Number: </label>
+                    <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" title="Please enter a valid 16-digit card number" required>
+                    <br>
+                    <label for="expiry">Expiration Date: </label>
+                    <input type="text" id="expiry" name="expiry" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" title="Please enter a valid expiration date in the format MM/YY" placeholder="MM/YY" required>
+                    <br>
+                    <label for="cvvNumber">CVV: </label>
+                    <input type="text" id="cvvNumber" name="cvvNumber" pattern="[0-9]{3}" title="Please enter a valid 3-digit CVV number" required>
+                </div>      
+    
+                <div class="bankGroup" id="paypalFields"  style="display: none;">
+                    <label for="paypalEmail">Paypal Email:</label>
+                    <input type="email" id="paypalEmail" name="paypalEmail" required>
+                    <br>
+                    <label for="paypalpw">Password:</label>
+                    <input type="password" id="paypalpw" name="paypalpw" required>
+                    <br>
+                </div>
+            </div>
+            <button type="submit" id="confirm" class="btn">Confirm</button>
+        </form>
+        </div>
+
+    <div class="cartDetails">
+        <h2>Order Summary</h2>
+        <div class="userCart">
+            <div class="item">
+                <div class="image">
+                    <img src="Products/Image1.jpg" alt="Product 1">
+                </div>
+                <div class="content">
+                    <div class="name">Sri Lanka Bag</div>
+                    <div class="price">LKR 12030</div>
+                </div>
+            </div>
+        </div>
+        <div class="functions">
+            <div class="discount">
+              <label for="promo">Promotion Code: </label>
+              <input type="text" id="promo" name="promo" required>
+              <button class="apply">Apply</button>
+            </div>
+            <div class="calc">
+              <div class="tax">Tax & Shipping: LKR 350</div>
+              <div class="paytotal">Total: </div>
+            </div>
+          </div> 
+    </div>
+    </div>
+
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <h2>Order Confirmation</h2>
+            <p><strong>Name:</strong> <span id="modalFullName"></span></p>
+            <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+            <p><strong>Contact:</strong> <span id="modalContact"></span></p>
+            <p><strong>Address:</strong> <span id="modalAddress"></span></p>
+
+            <button id="goBackBtn" class="btn">Go Back</button>
+            <button id="payNowBtn" class="btn">Pay Now</button>
+        </div>
+    </div>
+
+    <div id="loadingScreen" class="modal">
+        <div class="modal-content">
+            <h2>Processing Payment</h2>
+            <div class="loader"></div>
+        </div>
+    </div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script src="checkout.js"> </script>
+
+</body>
+</html>

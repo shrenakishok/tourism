@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="package.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="Assets/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="ExternalStyleSheet(2).css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <title>Packages</title>
+</head>
+<body>
+    <header class="header">
+        <img
+          class="WebLogo"
+          src="Assets/LOGO.png"
+          alt="Company Logo"
+          height="50"
+        />
+        <nav class="navbar">
+          <a href="./Home.html">HOME</a>
+          <a href="./Feedback.html">FEEDBACK</a>
+          <a class="Active" href="store.html">SHOP</a>
+          <a href="Quiz.html">QUIZ</a>
+          <a href="AboutUs.html ">ABOUT US</a>
+        </nav>
+    </header>
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    
+    <div class="container">
+        <h1 class="title"> Explore Day Tours</h1>
+
+        <div class="package-container">
+            <div class="box" data-name="pk-1">
+                    <img src="Assets/Packages/1.jpg" alt="Pigeon Island">
+                    <h3>Snorkeling at Pigeon Island</h3>
+                    <div class="price">LKR 14,500</div>
+            </div>
+
+            <div class="box" data-name="pk-2">
+                <img src="Assets/Packages/2.jpg" alt="Kandalama">
+                <h3>Night at Heritance Kandalama</h3>
+                <div class="price">LKR 40,000</div>
+            </div>
+            
+            <div class="box" data-name="pk-3">
+                <img src="Assets/Packages/3.jpg" alt="Bentota">
+                <h3>Fun Day at Bentota Beach</h3>
+                <div class="price">LKR 12,000</div>
+             </div>
+
+            <div class="box" data-name="pk-4">
+                <img src="Assets/Packages/4.jpg" alt="Colombo">
+                <h3>Tour Around Colombo City</h3>
+                <div class="price">LKR 15,000</div>
+            </div>
+        
+            <div class="box" data-name="pk-5">
+                <img src="Assets/Packages/5.jpg" alt="Galle">
+                <h3>Trip to Galle Fort</h3>
+                <div class="price">LKR 9,000</div>
+            </div>
+
+            <div class="box" data-name="pk-6">
+                <img src="Assets/Packages/6.jpg" alt="Hikkaduwa">
+                <h3>Beach Day at Hikkaduwa</h3>
+                <div class="price">LKR 12,000</div>
+            </div>
+
+            <div class="box" data-name="pk-7">
+                <img src="Assets/Packages/7.jpg" alt="Sigiriya">
+                <h3>Hiking on Sigiriya Rock Fortress</h3>
+                <div class="price">LKR 8,000</div>
+            </div>
+
+            <div class="box" data-name="pk-8">
+            <img src="Assets/Packages/8.jpg" alt="Aberdeen Falls">
+            <h3>Trip to Aberdeen Falls</h3>
+            <div class="price">LKR 12,500</div>
+            </div>
+
+            <div class="box" data-name="pk-9">
+                <img src="Assets/Packages/9.jpg" alt="Ravana's Cave">
+                <h3>Ravana Cave Expedition</h3>
+                <div class="price">LKR 15,000</div>
+            </div>
+
+            <div class="box" data-name="pk-10">
+                <img src="Assets/Packages/10.jpg" alt="Yala">
+                <h3>Day Safari at Yala National Park</h3>
+                <div class="price">LKR 25,000</div>
+            </div>
+
+            <div class="box" data-name="pk-11">
+                <img src="Assets/Packages/11.jpg" alt="Dambulla Air Balloon">
+                <h3>Hot Air Balloon Ride in Dambulla</h3>
+                <div class="price">LKR 16,000</div>
+            </div>
+
+            <div class="box" data-name="pk-12">
+                <img src="Assets/Packages/12.jpg" alt="Horton Plains">
+                <h3>Hike on Horton Plains</h3>
+                <div class="price">LKR 12,000</div>
+            </div>
+
+            <div class="box" data-name="pk-13">
+                <img src="Assets/Packages/13.jpg" alt="Mirissa">
+                <h3>Visit to Mirissa Beach</h3>
+                <div class="price">LKR 7,500</div>
+            </div>
+
+            <div class="box" data-name="pk-14">
+                <img src="Assets/Packages/14.jpg" alt="Pasikuda">
+                <h3>Beach Day at Pasikuda</h3>
+                <div class="price">LKR 8,500</div>
+            </div>
+
+            <div class="box" data-name="pk-15">
+                <img src="Assets/Packages/15.jpg" alt="Maskeliya">
+                <h3>Day at Gartmore Falls</h3>
+                <div class="price">LKR 10,000</div>
+            </div>
+
+         </div>
+    </div>
+
+
+    <div class="preview">
+        <div class="view" data-targets="pk-1">
+         <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/1.jpg" alt="">
+            <h3>Snorkeling at Pigeon Island</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Experience a 3 hour ultimate underwater adventure with Snorkeling at
+                 Pigeon Island! Discover a vibrant marine world filled with colorful coral reefs 
+                 and a myriad of tropical fish. Dive into crystal-clear waters and 
+                 create unforgettable memories as you explore this breathtaking natural sanctuary.
+                An extraordinary escapade for nature enthusiasts and water lovers alike!</p>
+            <div class="inclusion">
+                <h4>Details:</h4>
+                <p>Season: 15th October – 10th April
+                <br>OPEN HOURS: 8 am - 7 pm Every Day
+                <br>Kids under 5 are not allowed
+                </p>
+                <ul class="check-list">
+                  <li>Lunch</li>
+                  <li>Local Guide</li>
+                  <li>Snorkeling Equipment</li>
+                  <li>Free Pickup within 5km radius</li>
+                </ul>
+            </div>
+            <div class="price">LKR 14,500</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-2">
+       <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/2.jpg" alt="">
+            <h3>Night at Heritance Kandalama</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Experience luxury and tranquility amidst nature's embrace at Heritance Kandalama.  Unwind in opulent rooms, relish gourmet cuisine, 
+                and enjoy breathtaking views of the majestic Kandalama Lake and Sigiriya Rock. A truly unforgettable stay awaits you.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Included Spa Packages: Romantic Escape (2 hr 10 min), Coco Bliss (2 hr), De-Stress (2 hr), Heritance Wellness Ritual (2 hr), 
+                        Sensation Spa Journey (1hr 30 min) 
+                    <br>10% off your stay (Valid Until 8th August 2023)
+                    </p>
+                    <ul class="check-list">
+                        <li>Breakfast</li>
+                        <li>Lunch</li>
+                        <li>Dinner</li>
+                        <li>Library</li>
+                        <li>Child Care</li>
+                        <li>Sports and Gym</li>
+                        <li>Swimming Pools</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 40,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-3">
+       <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/3.jpg" alt="">
+            <h3>Fun Day at Bentota Beach</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Savor the sun, sand, and sea at Bentota Beach! Embrace thrilling water sports, relax on golden shores, 
+		        and indulge in delectable beachside treats. 
+		        Create cherished memories with family and friends in this coastal paradise.</p>
+            <div class="inclusion">
+                <h4>Details:</h4>
+                <p>Whale Watching Included
+		        <br>2 hours of travelling from Colombo City
+                </p>
+                <ul class="check-list">
+                  <li>Lunch</li>
+                  <li>Local Guide</li>
+		          <li>Transport from Colombo</li>
+                  <li>Skateboarding Equipments</li>
+                </ul>
+            </div>
+            <div class="price">LKR 12,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-4">
+       <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/4.jpg" alt="">
+            <h3>Tour Around Colombo City</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Discover the vibrant heart of Sri Lanka with our Colombo City tour. 
+	       Immerse yourself in rich history, visit iconic landmarks, and explore bustling markets. 	
+	       A perfect blend of tradition and modernity awaits you.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Entrances fees and food expenses are not included.
+			<br>Stops: Colombo Lighthouse, Prison Cell of the last Sri Lankan King, Lighthouse with Clock Tower designed by Lady Ward, President’s House, Galle Face Promenade 				with cannons of World War II, Port City, South Expansion of the Colombo Harbour, Slave Island area, War Memorial, Public Library, Nelum Pokuna Theatre, 				Vihara Maha Devi Park, Colombo Town Hall, BMICH, Parliament Complex, and many more.
+                    </p>
+                    <ul class="check-list">
+                        <li>Transport</li>
+                        <li>Cameraman</li>
+			<li>Pickup from Western and Southern Province</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 15,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+          
+        <div class="view" data-targets="pk-5">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/5.jpg" alt="">
+            <h3>Trip to Galle Fort</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Step back in time with a captivating trip to Galle Fort. 
+		        Wander through cobblestone streets, admire colonial architecture, and browse charming boutiques. 
+		        This UNESCO World Heritage site promises an enchanting journey into the past.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Extra must be paid for pictures to be taken.
+		             <br>2 hours are allocated as beach time (Please bring a swimsuit if participating).
+                    </p>
+                    <ul class="check-list">
+			<li>Lunch</li>
+ 			<li>Transport</li>
+     			<li>Local Guide</li>
+                       
+                    </ul>
+                </div>
+            <div class="price">LKR 9,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-6">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/6.jpg" alt="">
+            <h3>Beach Day at Hikkaduwa</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Unwind in paradise at Hikkaduwa Beach!
+		        Dive into crystal-clear waters, snorkel amidst colorful marine life, and relish lip-smacking seafood by the shore. 
+		        Embrace the laid-back vibes and make cherished memories.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>One double room at Suite Lanka with beach view.
+                        <br> Water Sports are avalaible at the location.
+                        <br> Extra free must be paid for Water Sports and Equipment if necessary.
+                    </p>
+                    <ul class="check-list">
+                        <li>Lunch</li>
+                        <li>Dinner</li>
+                        <li>Accommodation</li>
+                        <li>Transport from Colombo</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 12,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        
+        <div class="view" data-targets="pk-7">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/7.jpg" alt="">
+            <h3>Hiking on Sigiriya Rock Fortress</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Embark on an exhilarating hike up the ancient Sigiriya Rock Fortress. 
+		         Unravel the mysteries of this UNESCO site, adorned with captivating frescoes and mesmerizing views from the summit. 
+		         A bucket-list adventure for every traveler.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Pickup from Colombo at 4am. 
+		    <br> Hike starts at approximately 9am.
+		    <br> Duration of Hike: 6 hours.
+		    <br> Water, Snacks and Sandwiches are advisory to be packed.
+                    </p>
+                    <ul class="check-list">
+                        <li>Transport</li>
+                        <li>Breakfast</li>
+                        <li>Local Guide</li>
+                        <li>Rental Camera</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 8,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-8">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/8.jpg" alt="">
+            <h3>Trip to Aberdeen Falls</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Get enchanted by the cascading beauty of Aberdeen Falls. 
+		        Trek through lush jungles, breathe in fresh mountain air, and witness the breathtaking spectacle of nature's grandeur.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Approximate duration: 2-3 hours (3-4 if you would like to visit the top as well)
+		    <br>Kayaking under the falls for a small fee
+                    </p>
+                    <ul class="check-list">
+                        <li>Local Guide</li>
+                        <li>Transport from Western Province</li>
+                        <li>Rental Camera (additional charge)</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 12,500</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-9">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/9.jpg" alt="">
+            <h3>Ravana Cave Expedition</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Embark on a thrilling expedition to Ravana Cave, steeped in myth and legend. 
+			    Explore mysterious caves, learn about ancient folklore, and immerse yourself in a unique cultural experience.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Night Stay at Ella after cave expedition.
+		    <br> Duration: 2-3 hours
+		    <br> Transport available in the local for within 10km radius after expedition.
+                    </p>
+                    <ul class="check-list">
+                        <li>Hotel Room</li>
+                        <li>Tour Guide</li>
+                        <li>Food Expenses</li>
+                        <li>Transport within radius of 10km</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 15,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-10">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/10.jpg" alt="">
+            <h3>Day Safari at Yala National Park</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Embark on a wildlife adventure at Yala National Park.
+		         Witness majestic elephants, elusive leopards, and a myriad of exotic creatures in their natural habitat.
+		         An awe-inspiring safari awaits.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p> Recommended to check-in at the hotel before 11pm prior to Safari Day.
+	            <br> Pickup from hotel
+	            <br> Duration: 10 hours
+	            <br> Lunch Break at 2pm 
+	            <br> Drop at Hotel (checkout at 7pm)
+	            <br> <span>Note: Breakfast Consumption is recommended. Packing Snacks and Water is Advisory. </span>
+                    </p>
+                    <ul class="check-list">
+                        <li>Lunch</li>
+                        <li>Room Booked at Safari Lodge Yala</li>
+                        <li>Tour Guide</li>
+                        <li>Transport from Hotel to Safari</li>
+                        <li>Rental Cameras (Additional Cost)</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 25,000</div>
+            <button class="book">Book Now</button> 
+        </div>
+
+        <div class="view" data-targets="pk-11">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/11.jpg" alt="">
+            <h3>Hot Air Balloon Ride in Dambulla</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Soar above the captivating landscapes of Dambulla in a hot air balloon.
+		     Behold the majestic rock temples from the skies and embrace a bird's-eye view of the enchanting countryside.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Transfer from hotel to Hot Air Balloon takeoff point. 
+	     	    <br>3 to 4-hour hot air ballooning experience
+	     	    <br>Flights could be canceled at any time, even at the last moment before takeoff due to weather conditions.
+	     	    <br>Children under 16 years have to be accompanied by an adult.
+	     	    <br>It is recommended that pregnant women do not fly.
+                    </p>
+                    <ul class="check-list">
+                        <li>Guide</li>
+                        <li>Champagne Toast</li>
+                        <li>Airballoon Fees</li>
+                        <li>Cameraman (upon request)</li>
+                        <li>Free Transport for hotels within 10km radius</li>
+                        <li>International balloon flight certificate</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 16,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        
+        <div class="view" data-targets="pk-12">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/12.jpg" alt="">
+            <h3>Hike on Horton Plains</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Discover nature's wonders with a hike on Horton Plains. 
+		Trek to World's End for a breathtaking view, encounter unique flora and fauna, 	
+		and immerse yourself in the serenity of this highland paradise.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Start Time: 8am (Please meet the guide at pickup point before 8am)
+		    <br>Recommended to reach World’s end before 10am in order to enjoy the view.
+                    </p>
+                    <ul class="check-list">
+                        <li>Tour Guide</li>
+                        <li>Rental Cameras (upon request)</li>
+                        <li>Transport from Colombo City</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 12,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+
+        <div class="view" data-targets="pk-13">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/13.jpg" alt="">
+            <h3>Visit to Mirissa Beach</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Escape to the laid-back charm of Mirissa Beach. 
+			Relax under swaying palms, indulge in fresh seafood, and witness magnificent sunsets over the Indian Ocean. 
+			A coastal haven for ultimate relaxation.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Depart from Colombo at 2am and reach Mirissa for Whale Watching at 6am
+		    <br> Spend the day at Mirissa and depart back to Colombo at 5pm
+                    </p>
+                    <ul class="check-list">
+                        <li>Whale Watching</li>
+                        <li>Rooms for Changing</li>
+                        <li>Transport from Colombo City</li>
+                        <li>Water Sports and Equipments (Additional Cost)</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 7,500</div>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="view" data-targets="pk-14">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/14.jpg" alt="">
+            <h3>Beach Day at Pasikuda</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+            </div>
+            <p>Unwind on the pristine shores of Pasikuda Beach. 
+		Swim in calm azure waters, bask in the sun on soft sands, and experience true bliss in this tropical paradise.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Pickup at 8am and travel to Pasikuda
+		    <br> Lunch and Rooms provided at The Cove Pasikuda
+		    <br> Departure back to town at 5pm
+                    </p>
+                    <ul class="check-list">
+                        <li>Lunch</li>
+                        <li>Rooms</li>
+                        <li>Transport from Eastern Province</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 8,500</div>
+            <button class="book">Book Now</button>
+        </div>
+
+
+        <div class="view" data-targets="pk-15">
+        <i style="font-size:22px" class="fa" id="close">&#xf00d;</i>
+            <img src="Assets/Packages/15.jpg" alt="">
+            <h3>Day at Gartmore Falls</h3>
+            <div class="rating"> 
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Embark on a memorable day at Gartmore Falls. Trek through lush rainforests, bathe in refreshing cascades, and immerse yourself in nature's serenity. 
+		    A hidden gem for nature enthusiasts.</p>
+                <div class="inclusion">
+                    <h4>Details:</h4>
+                    <p>Transport from Colombo City to Nuwara Eliya at 4am
+		    <br> Hotel rooms booked at Daffodils Inn for the day.
+		    <br> No hotel charges for children under 10.
+                    <ul class="check-list">
+                        <li>Cameraman(optional)</li>
+                        <li>Transport from Colombo City</li>
+                        <li>Transport within 5km radius</li>
+                    </ul>
+                </div>
+            <div class="price">LKR 10,000</div>
+            <button class="book">Book Now</button>
+        </div>
+
+    </div>
+    <script src="package.js"></script>
+    <footer class="footer">
+        <div class="footerContent">
+          <div class="rowFooter">
+            <div class="colFooter icons">
+              <img
+                src="./Assets/LOGO.png"
+                width="150"
+                alt="Ceylon Trotters"
+              />
+              <ul class="footerIcons">
+                <li>
+                  <a href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-instagram"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="colFooter notIcons">
+              <h4>Developers</h4>
+              <ul class="footerNavigation">
+                <li><a href="./PageEditor.html">Sathurshanan</a></li>
+                <li><a href="Student1_Editor.html">Shrena</a></li>
+                <li><a href="page_editor.html">Dhilushan</a></li>
+              </ul>
+            </div>
+            <div class="colFooter notIcons">
+              <h4>Menu</h4>
+              <ul class="footerNavigation">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Feedback.html">Feedback</a></li>
+                <li><a href="store.html">Shop</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+              </ul>
+            </div>
+            <div class="colFooter notIcons">
+              <h4>Find More</h4>
+              <ul class="footerNavigation">
+                <li><a href="./AdditionalContent(Events).html">Events in Sri Lanka</a></li>
+                <li><a href="cara.html">Places Information</a></li>
+                <li><a href="additional.html">Our Gallery</a></li>
+              </ul>
+            </div>
+  
+            <div class="colFooter notIcons">
+              <h4>Page Editor</h4>
+              <ul class="footerNavigation">
+                <li><a href="Student1_Editor.html">Student 1</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">
+            Copyright © 2023 Ceylon Trotters | All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+    
+</body>
+</html>

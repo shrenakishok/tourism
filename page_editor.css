@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*{
+	font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background-image: url(Images/whitebg.jpg);
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    background-color: #23395B;
+    padding: 10px
+}
+
+h2 {
+    color: #23395B;
+}
+
+.name {
+    text-align: center;
+    font-size: 18px;
+}
+
+.role {
+    text-align: center;
+    font-size: 18px;
+}
+
+.topics {
+    padding-left: 40px;
+}
+
+li {
+    padding-bottom: 10px;
+}

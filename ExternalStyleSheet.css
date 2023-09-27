@@ -1,0 +1,141 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: transparent;
+  background-color: rgba(197, 211, 222, 0.292);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.navbar a {
+  color: #23395b;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.navbar a:hover,
+.navbar a.Active {
+  border-radius: 25px;
+  background-color: #23395b7d;
+  backdrop-filter: blur(50px);
+  color: #fff;
+  transition: 0.6s;
+}
+
+/******Footer******/
+
+.footer {
+  background-color: transparent;
+  background-color: rgba(197, 211, 222, 0.292);
+  box-shadow: 0 -7px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.footerContent {
+  width: 100%;
+  margin: auto;
+  max-width: 90%;
+}
+
+.rowFooter {
+  display: flex;
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+.icons ul {
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.icons ul li {
+  display: inline;
+  padding: 7px;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #23395b7d;
+  transition: 0.4s;
+}
+
+ion-icon:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+.colFooter {
+  width: 20%;
+  padding: 15px;
+}
+
+.colFooter ul {
+  list-style: none;
+}
+
+.colFooter h4 {
+  color: #23395b;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.colFooter ul li {
+  padding-bottom: 12px;
+}
+.colFooter ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #23395b;
+  transition: 0.2s;
+  font-weight: 400;
+}
+
+.notIcons ul li a:hover {
+  padding-left: 10px;
+}
+
+.copyright {
+  left: 50%;
+}
+
+.footerContent p {
+  padding-bottom: 23px;
+  text-align: center;
+  color: #23395b;
+}

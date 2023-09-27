@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="store.css">
+    <link rel="shortcut icon" href="Assets/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="ExternalStyleSheet(2).css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Store</title>
+</head>
+<body>
+  <header class="header">
+    <img
+      class="WebLogo"
+      src="Assets/LOGO.png"
+      alt="Company Logo"
+      height="50"
+    />
+    <nav class="navbar">
+      <a href="./Home.html">HOME</a>
+      <a href="./Feedback.html">FEEDBACK</a>
+      <a class="Active" href="store.html">SHOP</a>
+      <a href="Quiz.html">QUIZ</a>
+      <a href="AboutUs.html">ABOUT US</a>
+    </nav>
+  </header>
+
+<div class="container">
+    <button class="package" onclick="redirect1()">Explore Day Tours</button>
+<button class="product" onclick="redirect2()">Explore Our Store</button>
+</div>
+
+<script>
+    function redirect1() {
+      window.location.href = "package.html";
+    }
+  </script>
+   <script>
+    function redirect2() {
+      window.location.href = "product.html";
+    }
+  </script>
+
+<footer class="footer">
+  <div class="footerContent">
+    <div class="rowFooter">
+      <div class="colFooter icons">
+        <img
+          src="./Assets/LOGO.png"
+          width="150"
+          alt="Ceylon Trotters"
+        />
+        <ul class="footerIcons">
+          <li>
+            <a href="#"
+              ><ion-icon
+                class="social-icon"
+                name="logo-instagram"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="colFooter notIcons">
+        <h4>Developers</h4>
+        <ul class="footerNavigation">
+          <li><a href="PageEditor.html">Sathurshanan</a></li>
+          <li><a href="Student1_Editor.html">Shrena</a></li>
+          <li><a href="page_editor.html">Dhilushan</a></li>
+        </ul>
+      </div>
+      <div class="colFooter notIcons">
+        <h4>Menu</h4>
+        <ul class="footerNavigation">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="store.html">Shop</a></li>
+          <li><a href="Quiz.html">Quiz</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="colFooter notIcons">
+        <h4>Find More</h4>
+        <ul class="footerNavigation">
+          <li><a href="AdditionalContent(Events).html">Events in Sri Lanka</a></li>
+          <li><a href="cara.html">Places Information</a></li>
+          <li><a href="additional.html">Our Gallery</a></li>
+        </ul>
+          </div>
+
+      <div class="colFooter notIcons">
+        <h4>Page Editor</h4>
+        <ul class="footerNavigation">
+          <li><a href="Student1_Editor.html">Student 1</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">
+      Copyright © 2023 Ceylon Trotters | All Rights Reserved.
+    </p>
+  </div>
+    </footer>
+
+</body>
+</html>

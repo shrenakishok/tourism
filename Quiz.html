@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+	<!--Creating title and importing styles-->
+   <head>
+        <meta charset="utf-8">
+        <title>Quiz</title>
+		<link rel="stylesheet" href="Quiz.css">
+		<link rel="stylesheet" href="ExternalStyleSheet.css">
+		<link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   </head>
+   <body>
+   
+	<!--Creating a navigation bar-->
+	<header class="header">
+		<img
+		  class="WebLogo"
+		  src="Images/LOGO.png"
+		  alt="Company Logo"
+		  height="50"
+		>
+		<nav class="navbar">
+		  <a href="Home.html">HOME</a>
+		  <a href="Feedback.html">FEEDBACK</a>
+		  <a href="store.html">SHOP</a>
+		  <a class="Active">QUIZ</a>
+		  <a href="AboutUs.html">ABOUT US</a>
+		</nav>
+	  </header>
+	
+	  <!--This instruction box shows how the quiz works-->
+       <div class="instruction">
+			<h1>INSTRUCTIONS</h1><br>
+			<p>This quiz contains a total of 10 questions<br><br>
+			You have <em>60 seconds</em> to finish the quiz.<br><br>
+			For each correct answer you get <em>10</em> marks<br><br>
+			You will not lose marks for wrong answers.<br><br>
+			You can answer only one question at a time.<br><br>
+			Click the <em>next button</em> to proceed to the next question.<br><br>
+			You cannot go back to the previous question if you have moved to the next one.<br><br>
+			</p>
+			<input type="button" class="button" id="start" value="START">
+		</div>
+		                      
+		<!--This quiz container shows the questions, score, timer and options in a container-->  
+		<div  class="quiz-container  hide">
+		  <div  class="quiz-container1">
+			<div id="time" class="timer"></div>
+			<div class="score">     
+			    <h3>Score : <span class="total_score"></span> / 100</h3>
+			</div>
+			<div class="query_num">
+			</div>
+			<div class="question">
+			</div>
+			<div class="options">			
+			    <div class="answer">
+			       <label class="optionA" for="option0"></label>
+                   <input type="radio" name="option" class="radio" id="option0">	
+				</div>
+                <div class="answer">
+				   <label class="optionB" for="option1"></label>
+                   <input type="radio" name="option" class="radio" id="option1">
+                </div>
+                <div class="answer">
+				   <label class="optionC" for="option2"></label>
+                    <input type="radio" name="option" class="radio" id="option2">
+                </div>
+                <div class="answer">
+				   <label class="optionD" for="option3"></label>
+                    <input type="radio" name="option" class="radio" id="option3">
+                </div>
+			</div>
+			<div class="next">
+				<input type="button" id="next-button" class="button" value="Next">
+			</div>
+		  </div>	
+		</div>
+
+		<!--Result container shows the results at the end of the quiz-->
+		<div class="result-container hide">
+		    <h1 id="quiz-over">Quiz Over</h1>
+            <div class="comment-details">
+                <p>Total Questions: 10 </p>
+				<p id="questionsattempted"></p>
+				<p id="rightanswers"></p>
+                <p id="wronganswers"></p>
+                <p id="marks"></p>
+				<p id="grade"></p>
+				<p>Time Taken:<span id="timetaken"></span></p>
+				<p id="remarks"></p>
+			    <input type="button" class="button" id="start-again" value="START AGAIN">
+			</div>	
+		</div><br><br>
+			
+		<!--JavaScript code used for the quiz-->
+		<script src="Quiz.js"></script>
+
+		<!--Creates a footer for the information with links to related pages-->
+		<footer class="footer">
+			<div class="footerContent">
+			  <div class="rowFooter">
+				<div class="colFooter icons">
+				  <img
+					src="./Images/Logo.png"
+					width="150"
+					alt="Ceylon Trotters"
+				  >
+				  <ul class="footerIcons">
+					<li>
+					  <a href="#"
+						><ion-icon
+						  class="social-icon"
+						  name="logo-instagram"
+						></ion-icon
+					  ></a>
+					</li>
+					<li>
+					  <a href="#"
+						><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+					  ></a>
+					</li>
+					<li>
+					  <a href="#"
+						><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+					  ></a>
+					</li>
+				  </ul>
+				</div>
+				<div class="colFooter notIcons">
+				  <h4>Developers</h4>
+				  <ul class="footerNavigation">
+					<li><a href="PageEditor.html">Sathurshanan</a></li>
+					<li><a href="Student1_Editor.html">Shrena</a></li>
+					<li><a href="page_editor.html">Dhilushan</a></li>
+				  </ul>
+				</div>
+				<div class="colFooter notIcons">
+				  <h4>Menu</h4>
+				  <ul class="footerNavigation">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Feedback.html">Feedback</a></li>
+					<li><a href="store.html">Shop</a></li>
+					<li><a href="Quiz.html">Quiz</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+				  </ul>
+				</div>
+				<div class="colFooter notIcons">
+				  <h4>Find More</h4>
+				  <ul class="footerNavigation">
+					<li><a href="AdditionalContent(Events).html">Events in Sri Lanka</a></li>
+					<li><a href="cara.html">Places Information</a></li>
+					<li><a href="additional.html">Our Gallery</a></li>
+				  </ul>
+				</div>
+	  
+				<div class="colFooter notIcons">
+				  <h4>Page Editor</h4>
+				  <ul class="footerNavigation">
+					<li><a href="page_editor.html">Student 3</a></li>
+				  </ul>
+				</div>
+			  </div>
+			  <p class="copyright">
+				Copyright © 2023 Ceylon Trotters | All Rights Reserved.
+			  </p>
+			</div>
+		  </footer>
+
+	</body>
+</html>

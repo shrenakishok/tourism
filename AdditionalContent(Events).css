@@ -1,0 +1,57 @@
+.mainContent {
+  width: 100%;
+  height: 100%;
+}
+
+.events {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  padding-top: 70px;
+}
+
+.event {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  margin: 30px 0;
+  background-color: #fff;
+  color: #23395ba0;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgba(79, 78, 78, 0.6);
+  transition: 0.6s;
+}
+
+.event:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+  background-color: #fff;
+  color: #23395ba0;
+}
+
+.eventImage {
+  float: left;
+}
+
+.eventImage img {
+  width: 450px;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.eventInfo {
+  padding: 30px;
+  position: relative;
+}
+
+.eventInfo h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.eventInfo p {
+  font-size: 19px;
+  text-align: justify;
+}
